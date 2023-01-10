@@ -41,18 +41,50 @@ body {
   fill: #fcba28;
 }
 
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: visible;
+  gap: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1536px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.hero-left-container {
+  display: grid;
+  grid-column: span 6 / span 6;
+  align-items: center;
+  height: 100%;
+}
+
 .hero-left {
+  display: grid;
+  gap: 2rem;
   color: #f9f4da;
 }
 
 .hero-left h1 {
   font-size: 72px;
   font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
 }
 
 .hero-left h2 {
   font-size: 40px;
   font-family: "Outfit", sans-serif;
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.hero-left p {
+  max-width: 40ch;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .hero-left a {
@@ -62,52 +94,57 @@ body {
   background-color: #fcba28;
   padding: 1rem 1.5rem;
   border-radius: 9999px;
-  font-weight: bold;
 }
 
-.hero-container {
-  display: flex;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.hero-cta {
+  margin-top: 1rem;
+  font-family: "Paytone One";
+}
+
+.hero-right-container {
+  grid-column: span 6 / span 6;
+  margin-top: 3rem;
 }
 
 .hero-right {
   color: white;
-  display: flex;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  justify-items: center;
 }
 
 .card {
+  width: 420px;
   height: 556px;
-  width: 447px;
   border-radius: 1rem;
   border: 2px solid black;
 }
 
 .card1 {
+  grid-area: 1 / 1 / auto / 4;
   z-index: 2;
-  position: absolute;
   background-color: #ed203d;
-  margin-left: 50px;
+
   filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
   transform: translateX(0px) translateY(0px) scale(1) rotate(-3deg)
     translateZ(0px);
 }
 .card2 {
+  grid-area: 1 / 1 / auto / 4;
   z-index: 1;
-  background-color: #f38ba3;
-  margin-left: 100px;
-  position: absolute;
+  background-color: #12b5e5;
+
   filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
   transform: translateX(80px) translateY(0px) scale(0.9) rotate(3deg)
     translateZ(0px);
 }
 
 .card3 {
+  grid-area: 1 / 1 / auto / 4;
   z-index: 0;
   background-color: #fcba28;
-  margin-left: 150px;
-  position: absolute;
+
   filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
   transform: translateX(160px) translateY(0px) scale(0.8) rotate(-1.69778deg)
     translateZ(0px);
