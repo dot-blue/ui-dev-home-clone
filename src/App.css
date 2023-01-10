@@ -2,6 +2,12 @@ body {
   background-color: #0f0d0e;
 }
 
+.App {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -33,4 +39,70 @@ body {
 
 .logo-icon:hover svg path {
   fill: #fcba28;
+}
+
+.hero-left {
+  color: #f9f4da;
+}
+
+.hero-left h1 {
+  font-size: 72px;
+  font-family: "Paytone One", sans-serif;
+}
+
+.hero-left h2 {
+  font-size: 40px;
+  font-family: "Outfit", sans-serif;
+}
+
+.hero-left a {
+  color: #231f20;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fcba28;
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+}
+
+.hero-container {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.hero-right {
+  color: white;
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  height: 556px;
+  width: 447px;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.card1 {
+  z-index: 3;
+  position: absolute;
+  background-color: #ed203d;
+  margin-left: 50px;
+  filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
+}
+.card2 {
+  z-index: 2;
+  background-color: #f38ba3;
+  margin-left: 100px;
+  position: absolute;
+  filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
+}
+
+.card3 {
+  z-index: 1;
+  background-color: #fcba28;
+  margin-left: 150px;
+  position: absolute;
+  filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
 }
