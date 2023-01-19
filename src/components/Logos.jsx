@@ -6,7 +6,7 @@ function Logos() {
     <div className="logos-container">
       <figure className="logos-figure">
         <img src={logoList} alt="" className="company-logos" />
-        <figcaption>
+        <figcaption className="fig-text">
           You’ll be in great company with other developers we’ve trained
         </figcaption>
       </figure>
