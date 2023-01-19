@@ -149,3 +149,32 @@ body {
   transform: translateX(160px) translateY(0px) scale(0.8) rotate(-1.69778deg)
     translateZ(0px);
 }
+
+.logos-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1536px;
+  color: rgb(249 244 218);
+}
+
+.company-logos {
+  display: inline-block;
+  width: 75%;
+}
+
+.logos-figure {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.logos-figure figcaption {
+  margin-top: 1.5rem;
+}
