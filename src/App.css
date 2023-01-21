@@ -121,7 +121,7 @@ body {
   border: 2px solid black;
 }
 
-.card1 {
+.card-active {
   grid-area: 1 / 1 / auto / 4;
   z-index: 2;
   background-color: #ed203d;
@@ -130,7 +130,7 @@ body {
   transform: translateX(0px) translateY(0px) scale(1) rotate(-3deg)
     translateZ(0px);
 }
-.card2 {
+.card-left {
   grid-area: 1 / 1 / auto / 4;
   z-index: 1;
   background-color: #12b5e5;
@@ -140,7 +140,7 @@ body {
     translateZ(0px);
 }
 
-.card3 {
+.card-right {
   grid-area: 1 / 1 / auto / 4;
   z-index: 0;
   background-color: #fcba28;
