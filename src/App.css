@@ -115,6 +115,9 @@ body {
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 420px;
   height: 556px;
   border-radius: 1rem;
@@ -177,4 +180,86 @@ body {
 
 .logos-figure figcaption {
   margin-top: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-header img {
+  z-index: 1;
+  transform: rotate(35deg) scale(1);
+}
+
+.card-elipse {
+  display: flex;
+  align-items: center;
+  background-color: #f9f4da;
+  height: 220px;
+  width: 350px;
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  position: relative;
+
+  z-index: 0;
+  overflow: hidden;
+  filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
+  border: 1px black solid;
+}
+
+.name-container {
+  z-index: 3;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.star-container {
+  display: inline-flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  gap: 7px;
+}
+
+.star-container img {
+  transform: rotate(70deg);
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.name-container--inner {
+  background-color: #f9f4da;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: black;
+  border-radius: 15px;
+  border: 2px black solid;
+  filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
+  transform: rotate(2deg);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-right: 2.5rem;
+
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  max-width: 420px;
+}
+
+.card-testimonial {
+  color: black;
+  padding-top: 1rem;
 }
