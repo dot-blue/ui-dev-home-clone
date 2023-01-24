@@ -263,3 +263,108 @@ body {
   color: black;
   padding-top: 1rem;
 }
+
+.course-section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  max-width: 1536px;
+}
+
+.course-section header {
+  color: #f9f4da;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 80ch;
+}
+
+.course-section header h3 {
+  font-size: 4.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.course-section header h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.course-section span {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.course-section img {
+  color: #f9f4da;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  width: 100;
+  height: 100px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.course-list article {
+  background-color: #fcba28;
+
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
+}
+
+.course-list article a {
+  text-decoration: none;
+  color: black;
+}
+.course-card header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.course-list img {
+  width: 48px;
+  height: 48px;
+}
+
+.courses-star img {
+  width: 20px;
+  height: 20px;
+}
+
+.course-card header img {
+  margin-left: 0;
+}
+
+.course-card header h5 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.course-card header span {
+  color: black;
+  font-weight: bold;
+}
+
+.card-learn-more {
+  text-decoration: underline;
+}
+
+.course-about {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
