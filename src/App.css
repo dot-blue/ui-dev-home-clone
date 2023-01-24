@@ -298,7 +298,6 @@ body {
 }
 
 .course-section img {
-  color: #f9f4da;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -322,6 +321,12 @@ body {
   border: 1px solid black;
   border-radius: 0.5rem;
   filter: drop-shadow(7px 5px 0px rgba(0, 0, 0, 1));
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.course-list article:hover {
+  transform: scale(1.05);
 }
 
 .course-list article a {
@@ -367,4 +372,10 @@ body {
 .course-about {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
